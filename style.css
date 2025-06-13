@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #110e0e; /* Um fundo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fffc38;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 550px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -10%;
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
+}
+
+.timer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timer p {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #0a0909; /* Cor de coração */
+    margin: 10px 0;
+}
+
+#time-together {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    color: #0a0909;
+    border-top: 1px solid #1a1919;
+}
+
+.falling-heart {
+    position: fixed; /* Para que o coração possa se mover livremente na tela */
+    font-size: 3em; /* Tamanho do emoji */
+    color: #0000FF; /* Cor azul para o coração */
+    pointer-events: none; /* Garante que o coração não interfira com cliques em outros elementos */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-50px); /* Começa um pouco acima da tela */
+    transition: transform linear, opacity linear; /* Transição para a animação */
+    z-index: 1000; /* Garante que os corações fiquem acima de outros elementos */
+}
